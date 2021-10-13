@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      position: relative;
+    }
+
+    svg.curved-line {
+      /* width: 100px;
+      height: 100px; */
+      stroke-dasharray: 100 50;
+      stroke-dashoffset: 200;
+      animation: draw-curve 5s infinite linear;
+    }
+    svg.curved-line path {
+      stroke-width: 10;
+      overflow: hidden;
+    }
+
+    @keyframes draw-curve {
+      0% {
+        stroke-dashoffset: 200;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+  <body>
+    <svg
+      width="855px"
+      height="274px"
+      viewBox="0 0 855 274"
+      class="curved-line"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      preserveAspectRatio="none"
+    >
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(255, 255, 0); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 0, 0); stop-opacity: 1"
+          />
+        </linearGradient>
+
+        <path
+          id="curved-line"
+          d="M377.702407,644.165582 L436.741574,642.689144 C451.150189,642.328816 464.638481,649.748017 472.049211,662.110019 L486.06679,685.493054 C493.469952,697.842433 506.939021,705.260088 521.333285,704.914938 L574.850737,703.63168 L574.850737,703.63168"
+        ></path>
+        <!-- <polyline id="curved-line" points="20,20 40,25 60,40 80,120 120,140 200,180" style="fill:none;stroke:black;stroke-width:3" /> -->
+        <!-- <path
+          d="M34.7597656,24.6621094 C34.7597656,24.6621094 77.5078125,36.5332031 85.4667969,81.3476562 C93.4257812,126.162109 113.244141,136.978516 125.021484,61.3085937 C136.798828,-14.3613281 177.576172,3.91601562 181.253906,53.3027344 C184.931641,102.689453 198.804688,86.3828125 203.578125,66.0292969 C208.351562,45.6757812 219.548828,33.1386719 252.980469,33.1386719"
+          id="curved-line"
+        ></path> -->
+        <!-- <path id="curved-line" d="M857.70558 495.009024 397.943314 27.513634c-7.132444-7.251148-18.794042-7.350408-26.048259-0.216941-7.253194 7.132444-7.350408 18.795065-0.216941 26.048259l446.952518 454.470749L365.856525 960.591855c-7.192819 7.192819-7.192819 18.85544 0 26.048259 3.596921 3.596921 8.311293 5.39487 13.024641 5.39487s9.42772-1.798972 13.024641-5.39487L857.596086 520.949836C864.747973 513.797949 864.796068 502.219239 857.70558 495.009024z"></path> -->
+      </defs>
+
+      <g
+        stroke="none"
+        fill="none"
+        transform="translate(-201.000000, -600.000000)"
+      >
+        <use stroke="url(#grad1)" xlink:href="#curved-line"></use>
+      </g>
+    </svg>
+  </body>
+</html>
